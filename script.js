@@ -1,0 +1,25 @@
+function ShowAlert() {
+   alert("HOLA ESTA ES UNA ALERTA DESDE JAVASCRIPT") 
+}
+const form = document.getElementById('myForm');
+ 
+function validateEmail(email) {
+   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
+   return regex.test(email)
+   }
+   
+function validateForm() {
+      const Input = document.getElementById('email');
+      const inputValue = input.value;
+ }
+
+  if (!validateEmail(inputValue)) {
+   alert('Por favor ingrese un correo electrónico válido.');
+   } else {
+   alert('Correo electrónico enviado correctamente.');
+   }
+   
+   form.addEventListener('submit', function(pepe) {
+      pepe.preventDefault();
+      validateForm();
+      });
